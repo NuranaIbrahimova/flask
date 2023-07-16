@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
     <!-- Əlavə css və js faylları buraya əlavə edilir -->
   </head>
   <body>
     <!-- əsas məzmun hissəsi -->
-    {% block content %}{% endblock %}
+    {% block content %} {% endblock %}
   </body>
 </html>
